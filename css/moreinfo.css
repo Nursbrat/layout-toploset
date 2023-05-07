@@ -1,0 +1,96 @@
+.moreinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 99px;
+  box-sizing: content-box;
+}
+
+.moreinfo__info {
+  width: 100%;
+  margin-top: 33px;
+}
+.moreinfo__list {
+  width: 100%;
+  display: flex;
+  gap: 33px;
+}
+.moreinfo__list__card {
+  max-width: 366px;
+  height: 129px;
+  display: flex;
+  background: #f8f8f8 no-repeat top 12px right 16px;
+  border-left: solid 5px var(--indicator-color);
+}
+
+.moreinfo__list__card:hover {
+  border-left: solid 5px var(--logo-color);
+  box-shadow: 6px 6px 30px -3px rgba(0, 0, 0, 0.55);
+}
+.moreinfo__list__card:active {
+  border-left: solid 5px var(--active -color);
+}
+
+.icon-work {
+  background-image: url(../assets/info/work.svg);
+}
+.icon-setting {
+  background-image: url(../assets/info/settings.svg);
+  margin-left: 1.5px;
+  
+}
+.icon-tick{
+    background-image: url(../assets/info/tick-square.svg);
+}
+.moreinfo__list__card a {
+  margin: 16px;
+}
+.moreinfo__list__card-bold {
+  max-width: 331px;
+  height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+.moreinfo__list__card-bold-work {
+  width: 331px;
+  height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+.moreinfo__list__card-text {
+  width: 331px;
+  height: 42px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-color);
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 1280px) {
+  .moreinfo__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .moreinfo__list__card {
+    width: 250px;
+  }
+  .moreinfo__list__card-text {
+    width: 220px;
+    font-size: 14px;
+  }
+}
+

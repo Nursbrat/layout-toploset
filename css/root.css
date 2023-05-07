@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #ffffff;
+  --logo-color: #0f2a59;
+  --text-color: #181818;
+  --indicator-color: rgb(208, 208, 208);
+  --active-color: rgb(255, 136, 0);
+  --card-info: #f8f8f8;
+  --start-text-color: #b6b6b6;
+  --h2-text-color: #200e32;
+}
