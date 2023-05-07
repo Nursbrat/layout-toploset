@@ -1,0 +1,14 @@
+@import url("./css/reset.css");
+@import url("./css/classes.css");
+@import url("./css/root.css");
+
+@import url("./css/debugging.css");
+
+@import url("./css/header.css");
+@import url("./css/hero.css");
+@import url("./css/moreinfo.css");
+@import url("./css/news.css");
+@import url("./css/overview.css");
+@import url("./css/footer.css");
+
+@import url('./css/page-two.css')

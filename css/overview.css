@@ -1,0 +1,177 @@
+
+.overview{
+    display: grid;
+    row-gap: 48px;
+}
+
+
+
+.overview-box {
+ margin-top: 48px;
+  height: 480px;
+
+}
+.start {
+  background: no-repeat url(../assets/overview/overview-1.png) right 0;
+}
+.future {
+  background: no-repeat url(../assets/overview/overview-2.png) right 0;
+  
+}
+.about {
+  background: no-repeat url(../assets/overview/overview-3.png) right 0;
+ 
+ 
+}
+
+.overview-box-card {
+  max-width: 1040px;
+  max-height: 365px;
+  display: flex;
+  
+}
+.about .overview-box-card {
+  max-width: 1080px;
+}
+.overview-box-card__left {
+
+}
+
+.overview-box-info {
+  max-width: 540px;
+  height: 365px;
+  padding: 48px 48px 73px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+}
+.overview-box-info__left {
+  height: 384px;
+  padding: 48px 48px 90px;
+}
+
+.overview-box-info__title {
+  max-width: 259px;
+  height: 34px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--text-color);
+}
+.overview-box-info__title-left {
+  max-width: 335px;
+  height: 68px;
+}
+.overview-box-info__text {
+  max-width: 444px;
+  max-height: 140px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--start-text-color);
+  margin: 10px 0 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.overview-box-info__btn {
+  max-width: 260px;
+  height: 40px;
+  border: 1px solid var(--logo-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overview-box-info__btn a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--logo-color);
+}
+.overview-box-info__btn:hover {
+  background: var(--start-text-color);
+}
+.overview-box-info__btn:active {
+  background: var(--logo-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .overview-box {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .overview-box-card {
+    max-width: 300px;
+    height: 150px;
+  }
+  .overview-box-info__title {
+    height: 50px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .overview-box-info__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .overview-box-info__btn {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .overview-box {
+    max-width: 550px;
+    margin: 20px 20px 40px;
+    height: 250px;
+    padding: 20px;
+  }
+  .overview-box-info__title {
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .overview-box-info__text {
+    display: none;
+  }
+  .overview-box-info__btn {
+    padding: 5px 10px;
+  }
+  .overview-box-info {
+    max-width: 300px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .overview-box {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .overview-box {
+    max-width: 250px;
+  }
+  .overview-box-card {
+    max-width: 250px;
+  }
+  .overview-box-info {
+    width: 200px;
+    height: 120px;
+  }
+}
